@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+</head>
+<body>
+    <h1 class="text-center  text-secondary mt-5 ">Who is Tallest?</h1>
+    <!-- input box -->
+    <div class="container w-50 p-7 mt-5">
+        <input id="a1" type="text" placeholder="Enter Person_1 Height" class="form-control">
+        <div class="cont pt-5"><input id="a2" type="text" placeholder="Enter Person_2 Height" class="form-control"></div>
+
+        <div class="mt-5 text-center">
+            <button onclick="person()" type="submit" class="btn btn-outline-primary">check</button></div>
+    </div>
+    <!-- check button -->
+</body>
+<script>
+    function person() {
+        p1=a1.value
+        p2=a2.value
+        // age=document.querySelector('#a1').value
+        if(p1>p2){
+            alert('Person1 is tallest')
+        }
+        else{
+            alert("Person 2 is tallest")
+        }
+    }
+</script>
+</html>
